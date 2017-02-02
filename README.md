@@ -7,7 +7,7 @@ An extreme queuing system with high performance for managing all task in app wit
 [![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
 [![Xcode 8.0](https://img.shields.io/badge/Xcode-8.0-blue.svg?style=flat)](https://developer.apple.com/swift/)
 
-Method Tasking of queued closure (blocks) on GCD (Grand Central Dispatch).
+Method Tasking of queued closure on GCD (Grand Central Dispatch).
 
 ## Requirements
 
