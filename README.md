@@ -9,8 +9,6 @@ An extreme queuing system with high performance for managing all task in app wit
 
 Method Tasking of queued closure (blocks) on GCD (Grand Central Dispatch).
 
-Task is inspired by [Async](https://github.com/duemunk/Async).
-
 ## Requirements
 
 * iOS 8.0+
