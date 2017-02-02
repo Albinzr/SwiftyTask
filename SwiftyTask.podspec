@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Albin-CR/SwiftyTask"
   s.license      = 'MIT'
   s.author       = { "Albin CR" => "albin.git@gmail.com" }
-  s.source       = { :git => "https://github.com/Albin-CR/SwiftyTask.git" }
+  s.source       = { :git => "https://github.com/Albin-CR/SwiftyTask.git", :tag => "#{s.version}" }
 
   s.requires_arc = true
   s.platform     = :ios, '8.0'
