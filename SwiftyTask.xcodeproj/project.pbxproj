@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		610E14951E43A9BA00A78A63 /* SwiftyTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 610E14931E43A9BA00A78A63 /* SwiftyTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610E149C1E43AA5C00A78A63 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E149B1E43AA5C00A78A63 /* Queue.swift */; };
-		610E149E1E43AA8100A78A63 /* TaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E149D1E43AA8100A78A63 /* TaskExtension.swift */; };
-		610E14A01E43AA9D00A78A63 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E149F1E43AA9D00A78A63 /* Task.swift */; };
+		610E14AA1E43B68800A78A63 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E14A61E43B68800A78A63 /* Queue.swift */; };
+		610E14AC1E43B68800A78A63 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E14A81E43B68800A78A63 /* Task.swift */; };
+		610E14AD1E43B68800A78A63 /* TaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610E14A91E43B68800A78A63 /* TaskExtension.swift */; };
+		610E14B11E43B78700A78A63 /* SwiftyTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 610E14AF1E43B72600A78A63 /* SwiftyTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		610E14901E43A9BA00A78A63 /* SwiftyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		610E14931E43A9BA00A78A63 /* SwiftyTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SwiftyTask.h; path = ../SwiftyTask.h; sourceTree = "<group>"; };
-		610E14941E43A9BA00A78A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		610E149B1E43AA5C00A78A63 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = ../Queue.swift; sourceTree = "<group>"; };
-		610E149D1E43AA8100A78A63 /* TaskExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskExtension.swift; path = ../TaskExtension.swift; sourceTree = "<group>"; };
-		610E149F1E43AA9D00A78A63 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = ../Task.swift; sourceTree = "<group>"; };
+		610E14941E43A9BA00A78A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610E14A61E43B68800A78A63 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		610E14A81E43B68800A78A63 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		610E14A91E43B68800A78A63 /* TaskExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskExtension.swift; sourceTree = "<group>"; };
+		610E14AF1E43B72600A78A63 /* SwiftyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyTask.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +52,8 @@
 		610E14921E43A9BA00A78A63 /* SwiftyTask */ = {
 			isa = PBXGroup;
 			children = (
+				610E14941E43A9BA00A78A63 /* Info.plist */,
+				610E14AF1E43B72600A78A63 /* SwiftyTask.h */,
 				610E14A11E43AEE200A78A63 /* Source */,
 			);
 			path = SwiftyTask;
@@ -60,11 +62,9 @@
 		610E14A11E43AEE200A78A63 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				610E149B1E43AA5C00A78A63 /* Queue.swift */,
-				610E14931E43A9BA00A78A63 /* SwiftyTask.h */,
-				610E14941E43A9BA00A78A63 /* Info.plist */,
-				610E149D1E43AA8100A78A63 /* TaskExtension.swift */,
-				610E149F1E43AA9D00A78A63 /* Task.swift */,
+				610E14A61E43B68800A78A63 /* Queue.swift */,
+				610E14A81E43B68800A78A63 /* Task.swift */,
+				610E14A91E43B68800A78A63 /* TaskExtension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610E14951E43A9BA00A78A63 /* SwiftyTask.h in Headers */,
+				610E14B11E43B78700A78A63 /* SwiftyTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610E149E1E43AA8100A78A63 /* TaskExtension.swift in Sources */,
-				610E14A01E43AA9D00A78A63 /* Task.swift in Sources */,
-				610E149C1E43AA5C00A78A63 /* Queue.swift in Sources */,
+				610E14AD1E43B68800A78A63 /* TaskExtension.swift in Sources */,
+				610E14AC1E43B68800A78A63 /* Task.swift in Sources */,
+				610E14AA1E43B68800A78A63 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +318,7 @@
 				610E149A1E43A9BA00A78A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
