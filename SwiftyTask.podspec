@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftyTask"
-  s.version      = "3.0.0"
+  s.version      = "0.0.4"
   s.summary      = "An extream queuing system with high performance for managing all task in app with closure"
   s.homepage     = "https://github.com/Albin-CR/SwiftyTask"
   s.license      = 'MIT'
