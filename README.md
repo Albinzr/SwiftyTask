@@ -6,6 +6,8 @@ An extreme queuing system with high performance for managing all task in app wit
 [![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
 [![Xcode 8.0](https://img.shields.io/badge/Xcode-8.0-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![Ratting](https://img.shields.io/amo/rating/dustman.svg)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 Method Tasking of queued closure on GCD (Grand Central Dispatch).
 
