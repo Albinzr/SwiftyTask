@@ -116,7 +116,7 @@ Task.main {
     
     // main thread queue
 
-    print("start after: \(NSDate().description)")
+    print("start after: \(Date().description)")
 
     return "1"
     }.after(seconds: 5) { result in
@@ -125,26 +125,26 @@ Task.main {
         //background qos class thread queue
 
         print(result)
-        return "after 2: \(NSDate().description)"
+        return "after 2: \(Date().description)"
     }.userInteractive { result in
 
         //userInteractive qos class thread queue
 
         print(result)
-        return "after 3: \(NSDate().description)"
+        return "after 3: \(Date().description)"
     }.after(Queue.Utility, seconds: 5) { result in
 
         //5 seconds after the previous block
         // called at utility qos class thread queue
 
         print(result) 
-        return "after 4: \(NSDate().description)"
+        return "after 4: \(Date().description)"
     }.run(.Main) { result in
 
         // last call main thread queue
 
         print(result) 
-        print("after completion: \(NSDate().description)")
+        print("after completion: \(Date().description)")
 }
 ```
 
@@ -155,21 +155,21 @@ Task.main {
 
     //  main thread queue
 
-    print("start wait: \(NSDate().description)")
+    print("start wait: \(Date().description)")
     return "1"
     }.wait(seconds: 5).background { result in
 
         // 5 seconds after the previous block
         // background qos class thread queue
 
-        print("wait 2: \(NSDate().description)")
+        print("wait 2: \(Date().description)")
         return result
     }.wait(seconds: 5).main { result in
 
         // 5 seconds after the previous block
         // main thread queue
 
-        print("wait 3: \(NSDate().description)")
+        print("wait 3: \(Date().description)")
         return result
     }.run()
 
