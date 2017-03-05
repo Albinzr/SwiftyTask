@@ -37,7 +37,7 @@ pod "SwiftyTask"
 To integrate Task into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "Albin-CR/SwiftyTask"
+github "CR-Creations/SwiftyTask"
 ```
 
 ## Example
