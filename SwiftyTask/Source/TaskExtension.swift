@@ -66,7 +66,7 @@ extension Task {
         }
     }
     
-    fileprivate static func waitBlock(_ seconds: Double) -> ((Void) -> Void) {
+    fileprivate static func waitBlock(_ seconds: Double) -> (() -> ()) {
         return {
             let nanoSeconds = Int64(seconds * Double(NSEC_PER_SEC))
             let time = DispatchTime.now() + Double(nanoSeconds) / Double(NSEC_PER_SEC)

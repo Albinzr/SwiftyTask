@@ -9,7 +9,7 @@
 import Foundation
 
 public typealias Closure = ((Any?) -> Any?)
-public typealias StartClosure = ((Void) -> Any?)
+public typealias StartClosure = (() -> Any?)
 public typealias CompletionClosure = ((Any?) -> Void)
 
 // MARK: - Task Class
