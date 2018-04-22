@@ -37,7 +37,7 @@ or
 ```ruby
 use_frameworks!
 
-pod 'SwiftyTask', git: 'https://github.com/Albinzr/SwiftyTask', :tag => '1.0.0'
+pod 'SwiftyTask', git: 'https://github.com/Albinzr/SwiftyTask', :tag => '1.0.1'
 
 ```
 
@@ -55,7 +55,7 @@ github "CR-Creations/SwiftyTask"
 ### Basics
 
 ```swift
-SwiftyTaskmain {
+SwiftyTask.main {
 
     // main thread queue
 
@@ -95,7 +95,7 @@ SwiftyTaskmain {
 ```swift
 let queue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
 
-SwiftyTaskcustom(queue) {
+SwiftyTask.custom(queue) {
     
     //customQueue
 
@@ -121,7 +121,7 @@ SwiftyTaskcustom(queue) {
 ### After
 
 ```swift
-SwiftyTaskmain {
+SwiftyTask.main {
     
     // main thread queue
 
@@ -160,7 +160,7 @@ SwiftyTaskmain {
 ### Wait
 
 ```swift
-SwiftyTaskmain {
+SwiftyTask.main {
 
     //  main thread queue
 
