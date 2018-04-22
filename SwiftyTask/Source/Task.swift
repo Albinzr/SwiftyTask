@@ -12,14 +12,14 @@ public typealias Closure = ((Any?) -> Any?)
 public typealias StartClosure = (() -> Any?)
 public typealias CompletionClosure = ((Any?) -> Void)
 
-// MARK: - Task Class
-public final class Task {
+// MARK: - SwiftyTaskClass
+public final class SwiftyTask{
     
     public let closure: Closure
     public let queue: Queue
-    public let previousTask: Task?
+    public let previousTask: SwiftyTask?
     
-    public init(_ queue: Queue, _ previousTask: Task? = nil, _ closure: @escaping Closure) {
+    public init(_ queue: Queue, _ previousTask: SwiftyTask? = nil, _ closure: @escaping Closure) {
         self.closure = closure
         self.queue = queue
         self.previousTask = previousTask
@@ -29,8 +29,8 @@ public final class Task {
         let _closure = self.closure
         let _queue = self.queue.queue
         
-        if let _previousTask = self.previousTask {
-            return _previousTask.runTask { result in
+        if let _previousTask = self.previousTask{
+            return _previousTask.runTask{ result in
                 _queue.async { _ = next(_closure(result)) }
                 return nil
             }
