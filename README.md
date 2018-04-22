@@ -37,7 +37,7 @@ or
 ```ruby
 use_frameworks!
 
-pod 'SwiftyTask', git: 'https://github.com/Albinzr/SwiftyTask', :tag => '0.0.7'
+pod 'SwiftyTask', git: 'https://github.com/Albinzr/SwiftyTask', :tag => '1.0.0'
 
 ```
 
