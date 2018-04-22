@@ -15,9 +15,9 @@ Method Tasking of queued closure on GCD (Grand Central Dispatch).
 
 ## Requirements
 
-* iOS 8.0+
-* Swift 3.0+
-* Xcode 8.0+
+* iOS 10.0+
+* Swift 4.1+
+* Xcode 9.2+
 
 ## Installation
 
@@ -30,6 +30,15 @@ it, simply add the following line to your Podfile:
 use_frameworks!
 
 pod "SwiftyTask"
+```
+
+or
+
+```ruby
+use_frameworks!
+
+pod 'SwiftyTask', git: 'https://github.com/Albinzr/SwiftyTask', :tag => '0.0.7'
+
 ```
 
 ### Carthage
@@ -46,7 +55,7 @@ github "CR-Creations/SwiftyTask"
 ### Basics
 
 ```swift
-Task.main {
+SwiftyTaskmain {
 
     // main thread queue
 
@@ -86,7 +95,7 @@ Task.main {
 ```swift
 let queue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
 
-Task.custom(queue) {
+SwiftyTaskcustom(queue) {
     
     //customQueue
 
@@ -112,7 +121,7 @@ Task.custom(queue) {
 ### After
 
 ```swift
-Task.main {
+SwiftyTaskmain {
     
     // main thread queue
 
@@ -151,7 +160,7 @@ Task.main {
 ### Wait
 
 ```swift
-Task.main {
+SwiftyTaskmain {
 
     //  main thread queue
 
