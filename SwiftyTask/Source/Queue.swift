@@ -5,7 +5,6 @@
 //  Created by Albin CR on 1/27/17.
 //  Copyright © 2017 Albin CR. All rights reserved.
 //
-
 import Foundation
 
 public enum Queue {
